@@ -36,9 +36,9 @@ Initially the matrix would all be set to -1 to indicate that an answer has not b
 ```python
 if dp_matrix[i+1][j-1] == 1:
     if string[i] == string[j]:
-        dp_matrix[i][j] == 1
+        dp_matrix[i][j] = 1
     else:
-        dp_matrix[i][j] == 0
+        dp_matrix[i][j] = 0
 else:
     dp_matrix[i][j] = 0 
 ```
