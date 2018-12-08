@@ -31,8 +31,9 @@ It took a little while to come up with a solution, but thanks to the professor's
 
 
 #### Recursive Definition:
-Initially the matrix would all be set to -1 to indicate that an answer has not been found, the diagonal is set to 1. In that case, the answer has to be founf manually. We first start with substrings of lenght 1, then 2, 3, 4, and so on. 
+Initially the matrix would all be set to -1 to indicate that an answer has not been found, the diagonal is set to 1. In that case,the answer has to be found manually. We first start with substrings of lenght 1, then 2, 3, 4, and so on. 
 
+```python
 if dp_matrix[i+1][j-1] == 1:
     if string[i] == string[j]:
         dp_matrix[i][j] == 1
@@ -40,6 +41,7 @@ if dp_matrix[i+1][j-1] == 1:
         dp_matrix[i][j] == 0
 else:
     dp_matrix[i][j] = 0 
+```
 
 #### Data Structure:
 
